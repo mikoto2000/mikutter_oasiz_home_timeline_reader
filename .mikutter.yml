@@ -1,0 +1,10 @@
+---
+slug: :oasiz_home_timeline_reader
+depends:
+  mikutter: 3.0.4
+  plugin:
+      - voicetext
+version: '1.0'
+author: mikoto2000
+name: oasiz_home_timeline_reader
+description: ホームタイムラインのツイートを読み上げる
