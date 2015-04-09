@@ -31,7 +31,7 @@ Plugin.create(:oasiz_home_timeline_reader) do
             end
 
             # メッセージリビルドプラグインにリビルド依頼
-            read_text = Plugin.filtering(:rebuild_message, message)[0].body
+            read_text = Plugin.filtering(:rebuild_message, message)[0].to_show
 
             # リビルド後のテキストを読み上げ依頼
             Plugin.filtering(:voicetext_read, read_text)
